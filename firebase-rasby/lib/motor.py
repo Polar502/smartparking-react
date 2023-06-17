@@ -1,9 +1,4 @@
-import importlib.util
-try:
-    importlib.util.find_spec('RPi.GPIO')
-    import RPi.GPIO as GPIO
-except ImportError:
-    import FakeRPi.GPIO as GPIO
+import RPi.GPIO as GPIO
 
 # import RPi.GPIO as GPIO
 import time
