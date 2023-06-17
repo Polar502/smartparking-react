@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Establece el tamaño de la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Establece el color de fondo de la barra */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Establece el color y bordes redondeados de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 50px;
+}
+
+/* Cambia el color de la barra de desplazamiento al pasar el ratón por encima */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Firefox */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+
